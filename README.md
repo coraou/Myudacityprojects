@@ -23,19 +23,19 @@ Additionally, I also used d3.js.
 
 ## Feedback
 ### Questions:
-What do you notice in the visualization?
-What questions do you have about the data?
-What relationships do you notice?
-What do you think is the main takeaway from this visualization?
-Is there something you don’t understand in the graphic?
+1. What do you notice in the visualization?
+2. What questions do you have about the data?
+3. What relationships do you notice?
+4. What do you think is the main takeaway from this visualization?
+5. Is there something you don’t understand in the graphic?
 
 ### Feedbacks are given by my friends:
 Feedback from Max:
-1.I noticed that the proportions of the survivors in titanic are different in different groups.
-2.I don’t have any question about the data.
-3.Travelling with families has more chance to survive, while travelling alone is more easy to die.
-4.The data are demonstrated in a clear and neat way. And instead of just simply showing the data, the visualization presents the data with a guidance.
-5.No
+1. I noticed that the proportions of the survivors in titanic are different in different groups.
+2. I don’t have any question about the data.
+3. Travelling with families has more chance to survive, while travelling alone is more easy to die.
+4. The data are demonstrated in a clear and neat way. And instead of just simply showing the data, the visualization presents the data with a guidance.
+5. No
 
 Suggestions:
 1. The font of the button can change into boldface. 
