@@ -1,57 +1,52 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/coraou/Myudacityprojects/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/coraou/Myudacityprojects/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
 ### Summary
 
 The data visualization is based on a dataset that includes information of 891 passengers on Titanic. The visualization aims to provide some intuitions about how to travel safely through exploring the relationship between the presence of travel companions and the survival rate.
 
-### Design
+## Design
 
-## Chart Types:
+### Chart Types
 As I want to show the proportions of groups, I only have two alternatives——pie chart and bar chart. But as pie charts are less effective than bar charts (in that pie charts use more visual encodings to convey the same information than bar charts), I chose bar charts in this visualization.
 
-## Visual encodings:
+### Visual encodings
 x position: groups(Alone, With siblings or spouses, With parents or children)
 y position: the proportions
 
-## Story:
+### Story
 At first, I wanted to show an animation of the story. But setting a suitable time interval between different parts of the story is too difficult (because different people read at different speed). So later I created buttons so that readers can control the flow of the story by themselves.
 The story is followed by an interaction which allows the readers to explore by themselves.
   
-## Libraries:
+### Libraries
 As the bar charts are not complicated, I used dimple.js to create them.
 Additionally, I also used d3.js.
-  
+
+## Design Change
+
+## Feedback
+### Questions:
+What do you notice in the visualization?
+What questions do you have about the data?
+What relationships do you notice?
+What do you think is the main takeaway from this visualization?
+Is there something you don’t understand in the graphic?
+
+### Feedbacks are given by my friends:
+Feedback from Max:
+1.I noticed that the proportions of the survivors in titanic are different in different groups.
+2.I don’t have any question about the data.
+3.Travelling with families has more chance to survive, while travelling alone is more easy to die.
+4.The data are demonstrated in a clear and neat way. And instead of just simply showing the data, the visualization presents the data with a guidance.
+5.No
+
+Suggestions:
+1. The font of the button can change into boldface. 
+2. Also swap the order of the ‘next’ and ‘back’ button will be better.
+
+Feedback from Claire:
+1. I notice that the visualization makes a comparison between the number of people going with families and that of those who went alone. Also it shows the numbers of survivors and victims in different groups.
+2. I don't think the conclusion that we should always travel with our families can be drawn so easily without considerable data.
+3. Maybe if a person travel alone, he will be more likely to face danger than those who travel with others.
+4. The part where I can go back to the previously shown graghs.
+5. No.
+
+## Resources
+https://grafana.com/blog/2015/12/04/friends-dont-let-friends-abuse-pie-charts/
