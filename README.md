@@ -34,6 +34,24 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-###Summary
+### Summary
 
-  The data visualization is based on a dataset that includes information of 891 passengers on Titanic. The visualization aims to provide some intuitions about how to travel safely through exploring the relationship between the presence of travel companions and the survival rate.
+The data visualization is based on a dataset that includes information of 891 passengers on Titanic. The visualization aims to provide some intuitions about how to travel safely through exploring the relationship between the presence of travel companions and the survival rate.
+
+### Design
+
+## Chart Types:
+As I want to show the proportions of groups, I only have two alternatives——pie chart and bar chart. But as pie charts are less effective than bar charts (in that pie charts use more visual encodings to convey the same information than bar charts), I chose bar charts in this visualization.
+
+## Visual encodings:
+x position: groups(Alone, With siblings or spouses, With parents or children)
+y position: the proportions
+
+## Story:
+At first, I wanted to show an animation of the story. But setting a suitable time interval between different parts of the story is too difficult (because different people read at different speed). So later I created buttons so that readers can control the flow of the story by themselves.
+The story is followed by an interaction which allows the readers to explore by themselves.
+  
+## Libraries:
+As the bar charts are not complicated, I used dimple.js to create them.
+Additionally, I also used d3.js.
+  
