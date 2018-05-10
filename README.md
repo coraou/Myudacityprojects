@@ -48,5 +48,14 @@ Feedback from Claire:
 4. The part where I can go back to the previously shown graghs.
 5. No.
 
+Feedback from Constance:
+1. I could easily compare the numbers of the three groups, but couldn't read the exact numbers of the three groups.
+2. I doubt the creadibility of the dataset.
+3. I don't think the conclusion can be drawn so easily from such only one dataset.
+4. Animation and Interaction
+5. No
+
+Suggestions:
+1. The tooltip appears at the left of the page.
 ## Resources
 https://grafana.com/blog/2015/12/04/friends-dont-let-friends-abuse-pie-charts/
