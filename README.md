@@ -8,16 +8,16 @@ The data visualization is based on a dataset that includes information of 891 pa
 As I want to show the proportions of groups, I only have two alternatives——pie chart and bar chart. But as pie charts are less effective than bar charts (in that pie charts use more visual encodings to convey the same information than bar charts), I chose bar charts in this visualization.
 
 ### Visual encodings
-x position: groups(Alone, With siblings or spouses, With parents or children)
-y position: the proportions
+1. x position: groups(Alone, With siblings or spouses, With parents or children)
+2. y position: the proportions
 
 ### Story
 At first, I wanted to show an animation of the story. But setting a suitable time interval between different parts of the story is too difficult (because different people read at different speed). So later I created buttons so that readers can control the flow of the story by themselves.
 The story is followed by an interaction which allows the readers to explore by themselves.
   
 ### Libraries
-As the bar charts are not complicated, I used dimple.js to create them.
-Additionally, I also used d3.js.
+ As the bar charts are not complicated, I used dimple.js to create them.
+ Additionally, I also used d3.js.
 
 ## Design Change
 
@@ -31,7 +31,7 @@ Additionally, I also used d3.js.
 
 ### Feedbacks are given by my friends:
 Feedback from Max:
-1. I noticed that the proportions of the survivors in titanic are different in different groups.
+1. I noticed that the proportions of the survivors on titanic are different in different groups.
 2. I don’t have any question about the data.
 3. Travelling with families has more chance to survive, while travelling alone is more easy to die.
 4. The data are demonstrated in a clear and neat way. And instead of just simply showing the data, the visualization presents the data with a guidance.
