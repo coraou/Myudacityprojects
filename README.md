@@ -19,7 +19,8 @@ The story is followed by an interaction which allows the readers to explore by t
  As the bar charts are not complicated, I used dimple.js to create them.
  Additionally, I also used d3.js.
 
-## Design Change
+### Design Change
+According to the suggestions from my friends, I changed the order of the "next" and "back" buttons. I didn't make the font of the button boldface because I don't think the change will make my visualization better.
 
 ## Feedback
 ### Questions:
@@ -39,7 +40,7 @@ Feedback from Max:
 
 Suggestions:
 1. The font of the button can change into boldface. 
-2. Also swap the order of the ‘next’ and ‘back’ button will be better.
+2. Also swap the order of the ‘next’ and ‘back’ button will make the visualization better.
 
 Feedback from Claire:
 1. I notice that the visualization makes a comparison between the number of people going with families and that of those who went alone. Also it shows the numbers of survivors and victims in different groups.
