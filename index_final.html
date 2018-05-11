@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script src="http://d3js.org/d3.v4.min.js"></script>
+  	<script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+
+  	 <style>
+      h2 {
+      	text-align: center;
+
+      }
+      
+      .next1buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 80px;
+        left: 610px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next2buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 180px;
+        left: 680px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next3buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 180px;
+        left: 680px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next4buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 60px;
+        left: 500px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next5buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 100px;
+        left: 500px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next6buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 90px;
+        left: 515px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next7buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 140px;
+        left: 517px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .next8buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 190px;
+        left: 515px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .backbuttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 180px;
+        left: 580px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .back1buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 260px;
+        left: 1200px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .back2buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 80px;
+        left: 700px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      .another1buttons {
+        position:absolute;
+        background-color: lightblue;
+        top: 80px;
+        left: 550px;
+        margin: auto;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.33); 
+        
+      }
+      
+
+      
+
+    
+     </style>
+     
+  </head>
+  <body>
+
+  <div  id="next1">
+  <button class = "next1buttons", id="next1-btn">Next</button>
+  <h2>Of the 891 passengers on Titanic,</h2>
+  </div>
+
+  <div style="display: none", id="next2">
+    <button class="next2buttons", id="next2-btn">Next</button>
+    <h2>32% travelled with their siblings or spouses</h2>
+    <h2>24% travelled with their parents and children</h2>
+    <h2>while 60% went alone.</h2>
+  </div>
+
+  <div style="display: none", id="next3">  
+    <button class="next3buttons", id="next3-btn">Next</button>
+    <h2>Of those who were with their siblings or spouses,51% survived;</h2>
+    <h2>Of those who were with their parents or children, 47% survived;</h2>
+    <h2>But of those who were alone, Only 30% survived.</h2>
+  </div>
+  
+  <div style="display: none", id="next4">
+    <button class="next4buttons", id="next4-btn">I see. Let me see the previously shown charts</button>
+    <h2>So perhaps we should always travel with our families</h2>
+  </div>
+
+  <div style="display: none", id = "next5">
+    <h2>What do you want to see?</h2>
+    <button class="next6buttons", id="next6-btn">To see the total numbers of the three groups</button>
+    <button class="next7buttons", id="next7-btn">To see the proportion of survivors in the three groups</button>
+    <button class="next8buttons", id="next8-btn">To see the proportion of victims in the three groups</button>
+  </div>
+
+    <button style="display: none", class="backbuttons", id="back0-btn">back</button>
+    <button style="display: none", class="backbuttons", id="back1-btn">back</button>
+    <button style="display: none", class="back1buttons", id="back2-btn">back</button>
+    <button style="display: none", class="back2buttons", id="back3-btn">back</button>
+    
+  
+
+  <script type="text/javascript"> 
+
+
+   	function main(data) {
+      
+      var margin = 75,
+          width = 1400 - margin,
+          height = 600 - margin;
+      //Create a svg element
+      var svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", width + margin)
+                  .attr("height", height + margin)
+                  .append('g')
+                  .attr('class', 'chart');
+      
+      var next2 = document.getElementById('next2');
+      var next3 = document.getElementById('next3');
+      var next4 = document.getElementById('next4');
+      var next5 = document.getElementById('next5');
+      var back0 = document.getElementById('back0-btn');
+      var back1 = document.getElementById('back1-btn');
+      var back2 = document.getElementById('back2-btn');
+      var back3 = document.getElementById('back3-btn');
+      var another1 = document.getElementById('another1');
+      var another2 = document.getElementById('another2');
+      
+      //add events to trigger
+      d3.select("#next1-btn").on("click", function() {
+                        next1.style.display = "none";
+                        next2.style.display = "initial";
+                        back0.style.display = "initial";
+                        update("Percentage"); 
+                       });
+
+      d3.select("#back0-btn").on("click", function() {
+                        next1.style.display = "initial";
+                        next2.style.display = "none";
+                        back0.style.display = "none";
+                        d3.select("g.chart")
+                          .select("g.dimple-chart")
+                          .remove();
+                       });
+
+      d3.select("#next2-btn").on("click", function() {
+                        
+                        next2.style.display = "none";
+                        back1.style.display = "initial";
+                        next3.style.display = "initial";
+                        update("Survived"); 
+                       });
+
+      d3.select("#back1-btn").on("click", function() {
+                        next2.style.display = "initial";
+                        next3.style.display = "none";
+                        back1.style.display = "none";
+                        update("Percentage");
+                      });
+
+      d3.select("#next3-btn").on("click", function() {
+                        
+                        next3.style.display = "none";
+                        next4.style.display = "initial";
+                        back0.style.display = "none";
+                        back1.style.display = "none";
+                        update("Survived");
+                       });                   
+                        
+      d3.select("#next4-btn").on("click", function(){
+                        d3.select("g.chart")
+                          .select("g.dimple-chart")
+                          .remove();                    
+                        next4.style.display = "none";
+                        next5.style.display = "initial";
+                        
+                        
+                       });
+    
+      d3.select("#next6-btn").on("click", function() {
+                        next5.style.display = "none";
+                        back2.style.display = "initial"; 
+                        update("Percentage");
+                       });
+
+      d3.select("#back2-btn").on("click", function() {
+                        next5.style.display = "initial";
+                        back2.style.display = "none";
+                        d3.select("g.chart")
+                           .select("g.dimple-chart")
+                           .remove();
+                       });
+
+      d3.select("#next7-btn").on("click", function() {
+                         next5.style.display = "none";
+                         back2.style.display = "initial" ;
+                         update("Survived");
+                       });
+
+      d3.select("#next8-btn").on("click", function() {
+                         next5.style.display = "none"; 
+                         back2.style.display = "initial";
+                         update("Dead");
+                       });
+                       
+      //Create charts
+      function update(col) {
+            d3.select("g.chart")
+              .select("g.dimple-chart")
+              .remove();
+         
+            var myChart = new dimple.chart(svg, data);
+            myChart.setBounds(150, 80, 1000, 380);
+            var x = myChart.addCategoryAxis("x", "Category"); 
+            x.title = "Groups";
+            x.fontSize = "auto";
+            var y = myChart.addMeasureAxis("y", col);
+            y.title = col;
+            y.fontSize = "auto";
+            myChart.addSeries(null, dimple.plot.bar);
+            myChart.draw(1000);
+        }
+
+       
+        }
+
+     d3.csv("family-and-alone.csv",main);
+    
+   </script>
+   <h2></h2>
+  </body>
+    
+</html>
