@@ -20,7 +20,7 @@ The story is followed by an interaction which allows the readers to explore by t
  Additionally, I also used d3.js.
 
 ### Design Change
-According to the suggestions from my friends, I changed the order of the "next" and "back" buttons. I didn't make the font of the button boldface because I don't think the change will make my visualization better.
+According to the suggestions from my friends, I changed the order of the "next" and "back" buttons. I didn't make the font of the button boldface because I don't think the change will make my visualization better. Also, after my first submission, the Udacity reviewer suggests that the graph show the number of each group so that the comparisons of survivors and victims among the groups can make sense.
 
 ## Feedback
 ### Questions:
